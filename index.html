@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Class 110 Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1 class="btn btn-warning"
+        style="font-size: 44px; border-radius: 30px; border-style: dashed; letter-spacing: 3px;">Gesture WebApp
+        <br>
+        <span>&#9996;</span>
+        <span>&#128070;</span>
+        <span>&#128077;</span>
+        <span>&#128076;</span>
+        <span>&#129304;</span>
+    </h1>
+    <br><br><br>
+    <label> Take A sefie of a Gesture To Know About its Meaning</label>
+    <br><br>
+    <label> on The following Gesture the model is trained</label><br><br>
+    <span>&#9996; |</span>
+    <span>&#128070; |</span>
+    <span>&#128077; |</span>
+    <span>&#128076; |</span>
+    <span>&#129304; </span>
+    <br><br>
+
+    <center>
+        <div>
+            <h4 class="btn btn-info">Webcam View</h4>
+            <br><br>
+            <div id="webcam-view" style="height: 500px; width: 500px; border-style: double; "></div>
+            <br><br>
+            <button class="btn btn-danger" onclick="takesnapshot()">Capture Image</button>
+            <br><br>
+
+        </div>
+        <label>Prediction 1 =</label><br><br>
+        <p class="emotion_name" id="result_name"></p>
+        <p class="gustresult" id="update-gust"></p>
+
+        <br><br>
+
+        <div>
+            <label>Snapshot - </label>
+
+            <br><br>
+            <div id="result-snap" style="border-style: dashed; height: 500px; width: 500px;"></div><br><br>
+            <button class="btn btn-success" onclick="check()">Predict Emotion</button>
+
+        </div>
+    </center>
+</body>
+
+</html>

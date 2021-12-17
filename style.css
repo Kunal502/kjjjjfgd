@@ -1,0 +1,12 @@
+body{
+    background-color: lightskyblue;
+    behavior: smooth;
+    text-align: center;
+}
+label{
+    font-size: 14px;
+}
+
+#captured_img{
+    margin-top: 30px;
+}
